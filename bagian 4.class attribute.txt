@@ -1,0 +1,17 @@
+class Mahasiswa:
+    jumlah_mahasiswa = 0
+
+    def __init__(self, name, nim, prodi):
+        self.name = name
+        self.nim = nim
+        self.prodi = prodi
+        Mahasiswa.jumlah_mahasiswa += 1
+
+mhs1 = Mahasiswa("Adam", "21051214005", "Informatika")
+mhs2 = Mahasiswa("Budi", "21051214006", "Sistem Informasi")
+
+print(mhs1.name)
+print(mhs2.name)
+print(mhs1.jumlah_mahasiswa)
+print(mhs2.jumlah_mahasiswa)
+print(Mahasiswa.jumlah_mahasiswa)
